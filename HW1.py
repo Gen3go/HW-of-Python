@@ -5,3 +5,14 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0) |
 
+
+a = int(123)
+summ = 0
+while a > 0:
+    c = a % 10
+    summ = summ + c
+    a = int(a / 10)
+print(summ)
+
+
+
