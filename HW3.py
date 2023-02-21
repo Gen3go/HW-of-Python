@@ -31,11 +31,6 @@ else:
     print("У Вас не счастливый билетик")
 
 
-# summ1 = 0
-# summ2 = 0
-
-# lenght1 = len(firsthalf)
-# lenght2 = len(secondhalf)
 
 # print("Введите число билета по одной цифре:  ")
 # a = input()
