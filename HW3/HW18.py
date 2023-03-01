@@ -12,13 +12,18 @@
 
 
 n = int(input("Введите длину массива: "))
-
 array = []
-
 i = 0
-
 while i < n:
     num = "Введите элемент " + str(i + 1) + ": "
     array.append(input(num))
     i += 1
 
+k = int(input())
+m = abs(k-array[i])
+
+number = array[0]
+for i in range(1, len(array)):
+    if m > abs(array[i] - k):
+        m = abs(array[i])
+print(number)
