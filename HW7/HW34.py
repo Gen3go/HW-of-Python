@@ -12,4 +12,17 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам 
 
-print ("ggg")
+stroka1 = "пара-ра-рам рам-пам-папам па-ра-па-да"
+vowels = ["а", "е", "ё", "и", "й", "о", "у", "ы", "э", "ю", "я"]
+phrases = stroka1.split()
+if len(phrases) < 2:
+    print("Мало фраз")
+else:
+    countVolwels = []
+    for i in phrases:
+        countVolwels.append(len([x for x in i if x.lower() in vowels]))
+
+    if set(countVolwels) == 1:
+        print("Парам пам-пам")
+    else:
+        print("Пам парам")
